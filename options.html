@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Options - Git Branch From Clipboard by @hachesilva</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body class="page-options">
+	<div>
+		<div class="field">
+			<label for="prefix" data-translate="txtPrefix">prefix</label>
+			<input type="text" name="prefix" id="prefix" value="" placeholder="feature/">
+			<span class="help" data-translate="txtPrefixHelp">help</span>
+		</div>
+		<div class="field">
+			<label for="command" data-translate="txtCommand">command</label>
+			<input type="text" name="command" id="command" value="" placeholder="git checkout -b">
+			<span class="help" data-translate="txtCommandHelp">help</span>
+		</div>
+		<div class="field">
+			<label for="replacement" data-translate="txtReplacement">replacement</label>
+			<input type="text" name="replacement" id="replacement" value="" placeholder="-">
+			<span class="help" data-translate="txtReplacementHelp">help</span>
+		</div>
+
+		<div id="status"></div>
+		<button id="save" data-translate="txtSave">Save</button>
+	</div>
+
+	<p class="donation">
+		<a href="https://www.paypal.me/hachesilva" title="Donate with paypal" class="btn btn-donate" target="_blank" data-translate="txtDonate">Donate</a>
+	</p>
+
+	<script src="js/utils.js"></script>
+	<script src="js/options.js"></script>
+</body>
+</html>

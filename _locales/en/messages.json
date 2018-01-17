@@ -1,0 +1,49 @@
+{
+	"extDesc": {
+		"message": "Obtain a Git command to create a git branch based on clipboard text or the current tab title.",
+		"description": "Extension description."
+	},
+	"txtHelp": {
+		"message": "Help",
+		"description": "Title"
+	},
+	"txtUsage": {
+		"message": "Usage Instructions",
+		"description": "Title"
+	},
+	"txtInstructions": {
+		"message": "<li>Click the 'ñ' icon in the Chrome toolbar</li> <li>Look for the character you want to copy</li> <li>Click the character to copy it to the computer clipboard</li> <li>Use the <kbd>Ctrl</kbd>+<kbd>v</kbd> keyboard shortcut (<kbd>Command</kbd>+<kbd>v</kbd> on Mac) to paste it wherever you need to.</li>",
+		"description": "Text"
+	},
+	"txtSuccess": {
+		"message": "Successfully copied to clipboard"
+	},
+	"txtFailed": {
+		"message": "Could not copy character to clipboard"
+	},
+	"txtDonate": {
+		"message": "Donate"
+	},
+	/* Options page */
+	"txtPrefix": {
+		"message": "Branch name prefix (optional)"
+	},
+	"txtPrefixHelp": {
+		"message": "Text to prepend to branch's name"
+	},
+	"txtCommand": {
+		"message": "Git command (optional)"
+	},
+	"txtCommandHelp": {
+		"message": "Git command to prepend to the branch name"
+	},
+	"txtReplacement": {
+		"message": "Replacement text (optional)"
+	},
+	"txtReplacementHelp": {
+		"message": "Text to replace symbols and whitespaces with"
+	},
+	"txtSave": {
+		"message": "Save"
+	}
+}

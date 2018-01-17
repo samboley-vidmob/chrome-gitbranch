@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Git Branch From Clipboard by @hachesilva</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body class="page-extension">
+	<ul class="menu" id="menu">
+		<li class="menu-item"><a href="#settings" id="settings">Settings</a></li>
+		<li class="menu-item"><a href="#help" id="help">Help</a></li>
+	</ul>
+
+	<section class="pane pane--main">
+		<div class="pane__header">
+			<h1 class="pane__title">Git Branch From Clipboard</h1>
+
+			<a href="#help" class="btn btn-help" id="btn-menu"><i class="icon"></i></a>
+		</div>
+		<main class="pane__content">
+			<div id="app">
+				<form action="_SELF" id="form">
+					<input type="text" name="name" id="name" autofocus>
+					<textarea type="text" name="result" id="result"></textarea>
+				</form>
+			</div>
+		</main>
+	</section>
+
+	<div class="help-overlay">
+		<section class="pane pane--help">
+			<div class="pane__header">
+				<h1 class="pane__title" data-translate="txtHelp">Help</h1>
+
+				<a href="#close" class="btn btn-close" id="close"><i class="icon">X</i></a>
+			</div>
+
+			<div class="instructions">
+				<h2 data-translate="txtUsage">Usage Instructions</h2>
+				<ol data-translate="txtInstructions">
+					<li>Click the extension icon in the Chrome toolbar</li>
+					<li>A new terminal command will be copied to the clipboard using the current page title</li>
+					<li>If you want to create a new custom branch, input the branch name into the panel text field and press enter, the new branch will be automatically copied to the clipboard</li>
+				</ol>
+
+				<p class="donation">
+					<a href="https://www.paypal.me/hachesilva" title="Donate with paypal" class="btn btn-donate" target="_blank" data-translate="txtDonate">Donate</a>
+				</p>
+			</div>
+		</section>
+	</div>
+
+	<script src="js/utils.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

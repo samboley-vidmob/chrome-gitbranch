@@ -1,0 +1,27 @@
+{
+	"extDesc": {
+		"message": "Obtenga un comando de Git para crear un branch usando como nombre el texto almacenado en el portapapeles o el título de la pestaña actual.",
+		"description": "Extension description."
+	},
+	"txtHelp": {
+		"message": "Ayuda",
+		"description": "Title"
+	},
+	"txtUsage": {
+		"message": "Instrucciones de Uso",
+		"description": "Title"
+	},
+	"txtInstructions": {
+		"message": "<li>Haga click en el icono 'ñ' en la barra de herramientas de Chrome</li> <li>Busque el caracter que quiere copiar</li> <li>Haga click en el caracter para copiarlo al portapapeles del computador</li> <li>Use el atajo de teclado <kbd>Ctrl</kbd>+<kbd>v</kbd> (<kbd>Command</kbd>+<kbd>v</kbd> en Mac) para pegar el caracter donde lo necesite.</li>",
+		"description": "Text"
+	},
+	"txtSuccess": {
+		"message": "Copiado al portapapeles"
+	},
+	"txtFailed": {
+		"message": "No se pudo copiar al portapapeles"
+	},
+	"txtDonate": {
+		"message": "Donar"
+	}
+}
