@@ -5,15 +5,19 @@
 	},
 	"txtHelp": {
 		"message": "Ayuda",
-		"description": "Title"
+		"description": "Menu item help"
+	},
+	"txtSettings": {
+		"message": "Configuración",
+		"description": "Menu item settings"
 	},
 	"txtUsage": {
 		"message": "Instrucciones de Uso",
-		"description": "Title"
+		"description": "Instructions panel title"
 	},
 	"txtInstructions": {
-		"message": "<li>Haga click en el icono 'ñ' en la barra de herramientas de Chrome</li> <li>Busque el caracter que quiere copiar</li> <li>Haga click en el caracter para copiarlo al portapapeles del computador</li> <li>Use el atajo de teclado <kbd>Ctrl</kbd>+<kbd>v</kbd> (<kbd>Command</kbd>+<kbd>v</kbd> en Mac) para pegar el caracter donde lo necesite.</li>",
-		"description": "Text"
+		"message": "<h3>Crear una rama a partir del texto seleccionado</h3> <ol> <li>Seleccione texto en la página actual</li> <li>Haga clic en el ícono de la extensión en la barra de herramientas de Chrome</li> <li>Un nuevo comando con el texto seleccionado será copiado automaticamente al portapapeles</li> </ol> <h3>Crear una rama a partir del título de la pestaña actual</h3> <ol> <li>Sin haber seleccionado texto en la página, haga clic en el ícono de la extensión en la barra de Chrome</li> <li>Un nuevo comando con el título de la pestaña será copiado automaticamente al portapapeles</li> </ol> <h3>Crear una rama a partir de texto personalizado</h3> <ol> <li>Sin haber seleccionado texto en la página, haga click en el ícono de la extensión en la barra de Chrome</li> <li>Se copiará un nuevo comando en el portapapeles</li> <li>Edite el texto que aparece en la casilla de eición de la extensión y envíe presionando la tecla Enter o haciendo clic en el botón</li> <li>Un nuevo comando con el texto insertado será copiado automaticamente al portapapeles</li> </ol>",
+		"description": "Instructions"
 	},
 	"txtSuccess": {
 		"message": "Copiado al portapapeles"
@@ -23,5 +27,27 @@
 	},
 	"txtDonate": {
 		"message": "Donar"
+	},
+	/* Options page */
+	"txtPrefix": {
+		"message": "Prefijo para el nombre de la rama (opcional)"
+	},
+	"txtPrefixHelp": {
+		"message": "Texto para anteponer al nombre de la rama"
+	},
+	"txtCommand": {
+		"message": "Comando de Git (opcional)"
+	},
+	"txtCommandHelp": {
+		"message": "Comando de Git para anteponer al nombre de la rama"
+	},
+	"txtReplacement": {
+		"message": "Texto de reemplazo (opcional)"
+	},
+	"txtReplacementHelp": {
+		"message": "Texto con el cuál reemplazar los simbolos y los espacios en blanco que contenga el nombre de la rama"
+	},
+	"txtSave": {
+		"message": "Guardar"
 	}
 }

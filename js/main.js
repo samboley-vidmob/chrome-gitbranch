@@ -72,7 +72,6 @@
 	GitBranchFromClipboard.prototype.initialize = function() {
 		var self = this;
 		var parsedText = undefined;
-		var utils = window.ExtUtils;
 
 		chrome.tabs.executeScript(
 			{
@@ -87,8 +86,6 @@
 				else {
 					self.getTabTitle();
 				}
-
-				utils.toastMessage( chrome.i18n.getMessage('txtSuccess') );
 			}
 		);
 	};
@@ -162,6 +159,7 @@
 	};
 
 	GitBranchFromClipboard.prototype.copyToClipboard = function(text) {
+		var utils = window.ExtUtils;
 		var textArea = document.createElement('textarea');
 
 		textArea.id = 'text-copier';
@@ -173,8 +171,9 @@
 
 		try {
 			var successful = document.execCommand('copy');
+			utils.toastMessage( chrome.i18n.getMessage('txtSuccess') );
 		} catch (err) {
-			prompt( chrome.i18n.getMessage('txtFailed') );
+			utils.toastMessage( chrome.i18n.getMessage('txtFailed'), 'error' );
 		}
 
 		document.body.removeChild(textArea);

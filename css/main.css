@@ -1,17 +1,92 @@
+/**
+ *
+ * Globals
+ *
+ */
+
+
 * {
 	box-sizing: border-box;
 }
 
 html {
-	height: 490px;
 	overflow: hidden;
+}
+
+input,
+textarea {
+	display: block;
+	clear: both;
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 1em;
+	padding: 0.5em 1em;
+}
+
+button,
+input[type="submit"],
+input[type="button"] {
+	cursor: pointer;
+}
+
+h2, h3 {
+	margin-top: 0;
+}
+
+ol {
+	margin-top: 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4d4d4;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #dfe0e6;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/**
+ *
+ * Page styles
+ *
+ */
+
+
+.document-popup {
+	height: 520px;
 }
 
 .page-extension {
 	margin: 0;
 	padding: 0;
-	width: 400px;
-	height: 490px;
+	width: 500px;
+	height: 520px;
 	background-color: white;
 	overflow-x: hidden;
 	overflow-y: hidden;
@@ -95,8 +170,8 @@ html {
 
 .icon:before {
 	position: absolute;
-    width: .8em;
-    height: .8em;
+    width: 12px;
+    height: 12px;
     content: '';
     background-repeat: no-repeat;
     background-size: contain;
@@ -222,7 +297,7 @@ html {
 
 .donation {
 	text-align: center;
-	margin-top: 4em;
+	margin-top: 1em;
 }
 
 .btn-donate {
@@ -235,43 +310,8 @@ html {
 	border-radius: 2em;
 }
 
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-::-webkit-scrollbar-button {
-  width: 0px;
-  height: 0px;
-}
-::-webkit-scrollbar-thumb {
-  background: #e1e1e1;
-  border: 0px none #ffffff;
-  border-radius: 50px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #d4d4d4;
-}
-::-webkit-scrollbar-thumb:active {
-  background: #000000;
-}
-::-webkit-scrollbar-track {
-  background: #f5f5f5;
-  border: 0px none #ffffff;
-  border-radius: 0px;
-}
-::-webkit-scrollbar-track:hover {
-  background: #dfe0e6;
-}
-::-webkit-scrollbar-track:active {
-  background: #333333;
-}
-::-webkit-scrollbar-corner {
-  background: transparent;
-}
-
-
 #messages {
-	background: #e8f5e9;
+	background-color: #e8f5e9;
 	border-radius: 0.5em;
 	color: #000;
 	padding: 1em;
@@ -295,6 +335,10 @@ html {
 	opacity: 1;
 }
 
+#messages.error {
+	background-color: #ffc0cb;
+}
+
 #text-copier {
 	position: absolute;
 	top: 0;
@@ -314,16 +358,6 @@ html {
 	max-width: 960px;
 	margin-right:  auto;
 	margin-left:  auto;
-}
-
-input,
-textarea {
-	display: block;
-	clear: both;
-	width: 100%;
-	box-sizing: border-box;
-	margin-bottom: 1em;
-	padding: 0.5em 1em;
 }
 
 #name {

@@ -18,6 +18,10 @@
 		$messages.innerText = message;
 		$messages.className = 'visible';
 
+		if (type == 'error') {
+			$messages.className += ' error';
+		}
+
 		document.body.appendChild($messages);
 
 		setTimeout(function() {

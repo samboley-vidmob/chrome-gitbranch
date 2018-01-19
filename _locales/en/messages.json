@@ -5,21 +5,25 @@
 	},
 	"txtHelp": {
 		"message": "Help",
-		"description": "Title"
+		"description": "Menu item help"
+	},
+	"txtSettings": {
+		"message": "Settings",
+		"description": "Menu item settings"
 	},
 	"txtUsage": {
 		"message": "Usage Instructions",
-		"description": "Title"
+		"description": "Instructions panel title"
 	},
 	"txtInstructions": {
-		"message": "<li>Click the 'ñ' icon in the Chrome toolbar</li> <li>Look for the character you want to copy</li> <li>Click the character to copy it to the computer clipboard</li> <li>Use the <kbd>Ctrl</kbd>+<kbd>v</kbd> keyboard shortcut (<kbd>Command</kbd>+<kbd>v</kbd> on Mac) to paste it wherever you need to.</li>",
-		"description": "Text"
+		"message": "<h3>Create a branch from selected text</h3> <ol> <li>Select text on current page</li> <li>Click the extension icon in the Chrome toolbar</li> <li>A new terminal command will be automatically copied to the clipboard using the previously selected text</li> </ol> <h3>Create a branch from the current tab's title</h3> <ol> <li>With no text selected on the page, click the extension icon in the Chrome toolbar</li> <li>A new terminal command will be automatically copied to the clipboard using the current page title</li> </ol> <h3>Create a branch from custom text</h3> <ol> <li>With no text selected on the page, click the extension icon in the Chrome toolbar</li> <li>A new terminal command will be automatically copied to the clipboard using the current page title</li> <li>Edit the text in the text field and submit the form by hitting enter or by clicking the submit button</li> <li>A new terminal command will be automatically copied to the clipboard using the custom text you submitted</li> </ol>",
+		"description": "Instructions"
 	},
 	"txtSuccess": {
 		"message": "Successfully copied to clipboard"
 	},
 	"txtFailed": {
-		"message": "Could not copy character to clipboard"
+		"message": "Could not copy command to clipboard"
 	},
 	"txtDonate": {
 		"message": "Donate"

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="document-popup">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +8,8 @@
 </head>
 <body class="page-extension">
 	<ul class="menu" id="menu">
-		<li class="menu-item"><a href="#settings" id="settings">Settings</a></li>
-		<li class="menu-item"><a href="#help" id="help">Help</a></li>
+		<li class="menu-item"><a href="#settings" id="settings" data-translate="txtSettings">Settings</a></li>
+		<li class="menu-item"><a href="#help" id="help" data-translate="txtHelp">Help</a></li>
 	</ul>
 
 	<section class="pane pane--main">
@@ -22,6 +22,7 @@
 			<div id="app">
 				<form action="_SELF" id="form">
 					<input type="text" name="name" id="name" autofocus>
+					<input type="submit" name="submit" id="submit" value="Get branch name">
 					<textarea type="text" name="result" id="result"></textarea>
 				</form>
 			</div>
@@ -38,11 +39,9 @@
 
 			<div class="instructions">
 				<h2 data-translate="txtUsage">Usage Instructions</h2>
-				<ol data-translate="txtInstructions">
-					<li>Click the extension icon in the Chrome toolbar</li>
-					<li>A new terminal command will be copied to the clipboard using the current page title</li>
-					<li>If you want to create a new custom branch, input the branch name into the panel text field and press enter, the new branch will be automatically copied to the clipboard</li>
-				</ol>
+				<div data-translate="txtInstructions">
+					(_instructions_)
+				</div>
 
 				<p class="donation">
 					<a href="https://www.paypal.me/hachesilva" title="Donate with paypal" class="btn btn-donate" target="_blank" data-translate="txtDonate">Donate</a>
