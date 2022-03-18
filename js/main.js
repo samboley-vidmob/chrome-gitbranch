@@ -153,6 +153,10 @@
 				.replace(regexBrand, '')
 				.replace(regexEdgeSymbols, '')
 				.replace(regexMiddleSymbols, replacementText);
+
+			const secondHyphen = text.indexOf('-', 4);
+			text = text.substring(0, secondHyphen) + '/' + text.substring(secondHyphen + 1);
+
 			text = gitCommand + titleEnclosure + prefix + text + titleEnclosure;
 
 			return text;
