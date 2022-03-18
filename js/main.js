@@ -20,7 +20,7 @@
 
 			chrome.storage.sync.get(
 				{
-					prefix: 'feature/',
+					prefix: '',
 					command: 'git checkout -b ',
 					replacement: '-'
 				},

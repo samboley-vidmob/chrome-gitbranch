@@ -28,7 +28,7 @@
 		// Use default value color = 'red' and likesColor = true.
 		chrome.storage.sync.get(
 			{
-				prefix: 'feature/',
+				prefix: '',
 				command: 'git checkout -b ',
 				replacement: '-'
 			},
